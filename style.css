@@ -13,6 +13,13 @@
     align-items: center;
     flex-direction: column;
 }
+.circle{
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: fixed;
+}
 h2{
     font-family: "Poppins", sans-serif;
     color: white;
@@ -20,17 +27,22 @@ h2{
     font-weight: 500;
 }
 .parent{
-    height: 500px;
-    width: 80%;
+    height: 350px;
+    width: 95%;
     border: 2px solid white;
     margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    column-gap: 30px;
 }
 .parent > .child{
     height: 250px;
-    width: 300px;
+    width: 350px;
     border: 2px solid white;
+}
+.parent > .child > img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 }
