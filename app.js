@@ -30,27 +30,23 @@ MainBody.addEventListener("mousemove", CursorHandle);
 
 const ParentImages = document.querySelector(".parent");
 const image1 = document.querySelector("#img1");
-const image1A = document.querySelector("#img1A")
 const image2 = document.querySelector("#img2");
-const image2A = document.querySelector("#img2A")
 const image3 = document.querySelector("#img3");
 const image4 = document.querySelector("#img4");
 
 ParentImages.addEventListener("mouseover", (e) => {
-  console.log(e);
+  console.log(e.target.tagName);
+  if (e.target.tagName === 'IMG') {
+    console.log(e.target.dataset);
+    // if () {
+      
+    // }
+    
+  }
 
-    image1.style.display = 'none';
-    image1A.style.display = 'block';
-
-    image2.style.display = 'none';
-    image2A.style.display = 'block';
 });
 
-ParentImages.addEventListener("mouseout", () => {
-   image1.style.display = 'block';
-   image1A.style.display = 'none';
-
-   image2.style.display = 'block';
-   image2A.style.display = 'none';
-});
+// ParentImages.addEventListener("mouseout", () => {
+   
+// });
 
